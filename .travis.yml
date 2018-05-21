@@ -1,4 +1,5 @@
 language: cpp
 compiler: g++
-script: g++ -o hello hello.cpp
-./hello
+script: 
+    - g++ -o hello hello.cpp
+    - ./hello
