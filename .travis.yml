@@ -1,4 +1,3 @@
-
 dist: trusty
 sudo: false
 os:
@@ -9,7 +8,7 @@ language: cpp
 compiler: g++
 script: 
     - docker run anitagov/ubuntu-tools:1.3
-    - apt-get -y update
-    - apt-get -y install linux-generic
+    - sudo apt-get -y update
+    - sudo apt-get -y install linux-generic
     - sudo make -C drivers
     - find drivers -name isgx.ko -print
