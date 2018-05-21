@@ -1,7 +1,9 @@
 dist: trusty
-sudo: required
+sudo: false
 os:
     - linux
+services:
+    - docker
 language: cpp
 compiler: g++
 script: 
